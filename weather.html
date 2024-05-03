@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+
+        body{
+			background-image: url('weatherback.jpeg');
+			background-size: cover;
+        }
+
+    .Weather-box {
+	background:white;
+	text-align: center;
+	
+	width: 30%;
+	height: 30%;
+	color: #fff;
+	margin: 100px auto 0;
+	border: 0.3px solid black;
+	border-radius: 20px;
+	padding: 20px 25px;
+
+
+}
+
+.search {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.search input {
+	background: white;
+	color: #555;
+	padding: 7px 7px;
+	height: 10px;
+	border-radius: 10px;
+	flex: 1;
+	margin-right: 1px;
+	font-size: 15px;
+}
+
+.search button {
+	border: 0;
+	background: white;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.search button img {
+	width: 15px;
+}
+
+.weather-icon {
+	width: 70px;
+	margin-top: 2px;
+}
+
+.weather h1 {
+	font-size: 25px;
+	font-weight: 500;
+	color: black;
+}
+
+.weather h2 {
+	font-size: 30px;
+	font-weight: 400;
+	margin-top: -5px;
+	color: black;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	margin-top: 20px;
+	color: black;
+}
+
+.col {
+	display: flex;
+	align-items: center;
+	text-align: left;
+}
+
+.col img {
+	width: 25px;
+	margin-right: 10px;
+	
+}
+
+.humidity,
+.wind {
+	font-size: 20px;
+	margin-top: -6px;
+}
+    </style>
+</head>
+<body>
+    <div class="Weather-box">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" style="text-align: center;">
+            <button><img src="images/search.jpg"></button>
+        </div>
+
+        <div class="weather">
+            <img src="images/clear.jpg"  class="weather-icon" >
+            <h1 class="temp">37°c</h1>
+            <h2 class="city">Jalandhar</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.jpg">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.jpg">
+                    <div>
+                        <p class="wind">15 Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./weather.js"></script>
+
+</body>
+</html>
